@@ -1,0 +1,12 @@
+#使用锚点
+defaults: &defaults
+  adapter: mysql
+  host: localhost
+
+development:
+  database: myapp_dev
+  <<: *defaults
+
+test:
+  database: myapp_test
+  <<: *defaults
